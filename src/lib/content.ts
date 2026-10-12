@@ -49,7 +49,7 @@ export const copy = {
     groups: [
       {
         label: "Frontend",
-        items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "React Native / Expo"],
+        items: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
       },
       {
         label: "Backend",
@@ -105,18 +105,6 @@ export const copy = {
 
 export const projects: Project[] = [
   {
-    slug: "spaciofit",
-    year: "2026",
-    repoUrl: "https://github.com/FedericoSanPedro/SpacioFit",
-    featured: true,
-    stack: ["NestJS", "Prisma", "PostgreSQL", "JWT", "Next.js", "Tailwind", "AWS"],
-    title: "SpacioFit — gym operations",
-    summary: "REST API with roles (admin, trainer, student) for enrollment, schedules, attendance, and progress. Next.js frontend.",
-    problem: "A gym needs more than a landing page: enroll students, assign slots, track attendance, and see progress without scattered spreadsheets.",
-    approach: "NestJS backend with Prisma and PostgreSQL. JWT auth and RBAC. The frontend consumes the API and shows training-hour metrics. Deploy designed for AWS.",
-    outcome: "A fullstack product with a clear API contract, relational modeling, and a UI real staff can use. It is the fullest case of my current stack.",
-  },
-  {
     slug: "serverless-aws",
     year: "2026",
     repoUrl: "https://github.com/FedericoSanPedro/serverless-aws",
@@ -139,18 +127,6 @@ export const projects: Project[] = [
     problem: "I wanted a project where the Node server is visible: routes, types, and runtime — not only React components.",
     approach: "Typed Express 5, ts-node-dev in development, EJS views to deliver HTML from the server.",
     outcome: "A clear traditional Node server/API base, useful to discuss route design and TypeScript on the backend.",
-  },
-  {
-    slug: "gadget-selling-app",
-    year: "2026",
-    repoUrl: "https://github.com/FedericoSanPedro/Gadget-Selling-App",
-    featured: false,
-    stack: ["React Native", "Expo", "TypeScript", "Expo Router"],
-    title: "Gadget Selling App",
-    summary: "Mobile app with Expo Router for a catalog and sales flow. React beyond the DOM.",
-    problem: "Many React profiles stop at the web. I wanted to show the same mental model on native.",
-    approach: "Expo 54, React 19, file-based navigation with Expo Router, and strict TypeScript.",
-    outcome: "An app you can run on iOS, Android, and web from the same codebase.",
   },
 ];
 
