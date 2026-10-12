@@ -1,13 +1,11 @@
 import { Fraunces, Outfit, JetBrains_Mono } from "next/font/google";
 import type { Metadata } from "next";
-import { I18nProvider } from "lib/i18n";
 import { SiteShell } from "@/components/SiteShell";
 import "./globals.css";
 
 const display = Fraunces({
   subsets: ["latin"],
   variable: "--font-display",
-  axes: ["SOFT", "WONK", "opsz"],
 });
 
 const body = Outfit({
@@ -33,11 +31,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={`${display.variable} ${body.variable} ${mono.variable}`}>
+    <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
       <body>
-        <I18nProvider>
-          <SiteShell>{children}</SiteShell>
-        </I18nProvider>
+        <SiteShell>{children}</SiteShell>
       </body>
     </html>
   );

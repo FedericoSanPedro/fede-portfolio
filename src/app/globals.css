@@ -42,3 +42,8 @@ body {
   font-family: var(--font-display), Georgia, serif;
   letter-spacing: -0.04em;
 }
+
+a,
+button {
+  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease, opacity 160ms ease;
+}
