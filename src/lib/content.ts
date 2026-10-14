@@ -105,6 +105,19 @@ export const copy = {
 
 export const projects: Project[] = [
   {
+    slug: "architect-portfolio",
+    year: "2026",
+    liveUrl: "https://danielasanpedro.vercel.app/",
+    repoUrl: "https://github.com/FedericoSanPedro/architect-portfolio",
+    featured: true,
+    stack: ["Astro", "TypeScript", "Tailwind CSS", "Higgsfield", "Vercel"],
+    title: "Architect portfolio — scroll-driven walkthrough",
+    summary: "Portfolio site for an architect in Mar del Plata. A camera walkthrough of her own house design, played by scrolling.",
+    problem: "An architect's CV was a PDF full of renders, plans, and photos. Clients needed to see her work on a phone in seconds, and a static gallery would not show how a space feels.",
+    approach: "Astro with almost no client JavaScript. Her renders became stops of a walkthrough: camera moves between them generated with AI in Higgsfield, stitched into one video that scroll scrubs frame by frame, with a lighter cut for mobile and a still fallback for reduced motion. Plus a before/after kitchen remodel, a lightbox gallery, and image sizes reserved to avoid layout shift.",
+    outcome: "A fast static site, deployed on Vercel with link previews for WhatsApp. A real client, real content, and the kind of front-end detail that is hard to fake.",
+  },
+  {
     slug: "serverless-aws",
     year: "2026",
     repoUrl: "https://github.com/FedericoSanPedro/serverless-aws",
